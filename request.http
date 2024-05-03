@@ -32,3 +32,41 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6I
     "email":"gis@mail.com",
     "password":"password123"
 }
+
+
+### register
+POST https://expressjs-development-acb4.up.railway.app/api/v1/register
+Content-Type: application/json
+
+{
+    "name":"gis",
+    "email":"gis@mail.com",
+    "password":"password123"
+}
+
+### login
+POST https://expressjs-development-acb4.up.railway.app/api/v1/login
+Content-Type: application/json
+
+{
+    "email":"gis@mail.com",
+    "password":"password123"
+}
+
+### whoami
+GET https://expressjs-development-acb4.up.railway.app/api/v1/whoami
+# Authorization: Bearer tokentoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InJlZ2lzIiwiZW1haWwiOiJyZWdpc0BtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzE0NzI1MDM2fQ.-dDNmqdfplZkXxBBw-KF6edhlTIYyQ2SImkDpOJvyyA
+
+### create new admin
+POST https://expressjs-development-acb4.up.railway.app/api/v1/create-admin
+Content-Type: application/json
+
+
+{
+    "name":"gissr",
+    "email":"gissr@mail.com",
+    "password":"password123"
+}
+
+# You can access: https://expressjs-development-acb4.up.railway.app/ 
