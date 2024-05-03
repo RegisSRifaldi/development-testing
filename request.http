@@ -1,0 +1,34 @@
+### register
+POST http://localhost:3000/api/v1/register
+Content-Type: application/json
+
+{
+    "name":"regis",
+    "email":"regis@mail.com",
+    "password":"password123"
+}
+
+### login
+POST http://localhost:3000/api/v1/login
+Content-Type: application/json
+
+{
+    "email":"gis@mail.com",
+    "password":"password123"
+}
+
+### whoami
+GET http://localhost:3000/api/v1/whoami
+# Authorization: Bearer tokentoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InJlZ2lzIiwiZW1haWwiOiJyZWdpc0BtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzE0NzIzMDQxfQ.pGu7HgKYLB2Svuv9CWRefeusVsYr4MuOROJwAA69HAo
+
+### create new admin
+POST http://localhost:3000/api/v1/create-admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6ImdpcyIsImVtYWlsIjoiZ2lzQG1haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzE0NzIzMTg2fQ.ZE3kpcT_sPozfBwlQOlV8fxouEuhRM4hbIa35hxjdiQ
+
+{
+    "name":"gis",
+    "email":"gis@mail.com",
+    "password":"password123"
+}
