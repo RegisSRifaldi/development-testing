@@ -70,3 +70,41 @@ Content-Type: application/json
 }
 
 # You can access: https://expressjs-development-acb4.up.railway.app/ 
+
+
+### register
+POST https://expressjsprod-production.up.railway.app/api/v1/register
+Content-Type: application/json
+
+{
+    "name":"gisamang",
+    "email":"gisamang@mail.com",
+    "password":"password123"
+}
+
+### login
+POST https://expressjsprod-production.up.railway.app/api/v1/login
+Content-Type: application/json
+
+{
+    "email":"gisamang@mail.com",
+    "password":"password123"
+}
+
+### whoami
+GET https://expressjsprod-production.up.railway.app/api/v1/whoami
+# Authorization: Bearer tokentoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Imdpc2FtYW5nIiwiZW1haWwiOiJnaXNhbWFuZ0BtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzE0NzQxMDY3fQ.NTRQd9Ki1f5oxrs2msurpu4kwRNdZVVI4wYneebmurY
+
+### create new admin
+POST https://expressjsprod-production.up.railway.app/api/v1/create-admin
+Content-Type: application/json
+
+
+{
+    "name":"gissr",
+    "email":"gissr@mail.com",
+    "password":"password123"
+}
+
+# You can access: https://expressjsprod-production.up.railway.app/
